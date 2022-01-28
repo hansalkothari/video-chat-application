@@ -35,6 +35,7 @@ peer.on('open',id =>{
     socket.emit('join-room',ROOM_ID , id);
 })
 
+/*****A USER WITH A USER ID WILL BE CONNECTED TO THE STREAM************/ 
 const connectToNewUser = (userId,stream) => {
     const call = peer.call(userId,stream);
     const video = document.createElement('vider');
@@ -50,6 +51,8 @@ const addVideoStream = (video,stream) =>{
     })
     videoGrid.append(video);
 }
+
+/******************* ADDING THE MESSAGE TO THE MESSAGE LIST *********************/
 
 let text = $("input");
 $('html').keydown(function (e) {
