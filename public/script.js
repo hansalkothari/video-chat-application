@@ -135,3 +135,4 @@ const setCameraOnButton = () =>{
     document.querySelector('.main__camera__button').innerHTML = htmlTag;
 }
 
+
